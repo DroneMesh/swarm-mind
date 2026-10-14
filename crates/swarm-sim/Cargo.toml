@@ -1,0 +1,9 @@
+[package]
+name = "swarm-sim"
+description = "World simulation for the swarm: terrain, radio and drone bodies."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+swarm-brain = { path = "../swarm-brain" }

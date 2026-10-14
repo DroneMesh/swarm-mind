@@ -1,0 +1,22 @@
+{
+  "name": "swarm-mind-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "wasm": "cargo build -p swarm-wasm --target wasm32-unknown-unknown --release && mkdir -p src/wasm && cp \"${CARGO_TARGET_DIR:-../target}/wasm32-unknown-unknown/release/swarm_wasm.wasm\" src/wasm/swarm.wasm",
+    "dev": "npm run wasm && vite",
+    "build": "npm run wasm && tsc && vite build",
+    "typecheck": "tsc",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  }
+}

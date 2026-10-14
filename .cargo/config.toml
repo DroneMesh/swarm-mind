@@ -1,0 +1,3 @@
+[alias]
+# Proves the brain builds for a bare-metal ESP32-C3 (RISC-V, no OS, no allocator).
+brain-mcu = "build -p swarm-brain --release --target riscv32imc-unknown-none-elf"

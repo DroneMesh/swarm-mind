@@ -1,0 +1,380 @@
+{
+  "crates/swarm-brain/Cargo.toml": {
+    "mtime": 1791638101.9470255,
+    "seen": 1791638489.011895,
+    "ast_hash": "e70a3725d646f7fe6acd365c3910f40a",
+    "semantic_hash": ""
+  },
+  "crates/swarm-brain/src/brain.rs": {
+    "mtime": 1791661898.0628965,
+    "seen": 1791662169.710669,
+    "ast_hash": "92d0be6fe599579bb9f4d2084fbd43f9",
+    "semantic_hash": ""
+  },
+  "crates/swarm-brain/src/fixed.rs": {
+    "mtime": 1791638102.946047,
+    "seen": 1791638489.011901,
+    "ast_hash": "a54ac9eff14e52a0b46e851c07d8f3ee",
+    "semantic_hash": ""
+  },
+  "crates/swarm-brain/src/lib.rs": {
+    "mtime": 1791661847.9032593,
+    "seen": 1791662169.710716,
+    "ast_hash": "ff5e2fdb2652bebae76f6e60ea36bfef",
+    "semantic_hash": ""
+  },
+  "crates/swarm-brain/src/math.rs": {
+    "mtime": 1791640928.7477899,
+    "seen": 1791643419.489096,
+    "ast_hash": "5fb1b1197f4ca95b2f20737bd166b4a9",
+    "semantic_hash": ""
+  },
+  "crates/swarm-brain/src/wire.rs": {
+    "mtime": 1791661847.9030852,
+    "seen": 1791662169.7109177,
+    "ast_hash": "3923b9aad23f17def00e674cded63c3c",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/Cargo.toml": {
+    "mtime": 1791638258.214285,
+    "seen": 1791638489.011905,
+    "ast_hash": "3a94d59d76c7d75083a0ee7a356cb169",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/lib.rs": {
+    "mtime": 1791660658.061186,
+    "seen": 1791662169.7110395,
+    "ast_hash": "1246a3d3e3e2038746266bb97de8965a",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/radio.rs": {
+    "mtime": 1791639154.9606016,
+    "seen": 1791639899.0206053,
+    "ast_hash": "0860b84e8dc61d07186343fe3983bcfe",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/rng.rs": {
+    "mtime": 1791656747.632534,
+    "seen": 1791657236.6392312,
+    "ast_hash": "022ad0f0e4d708f8a9f301565e6078a4",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/snapshot.rs": {
+    "mtime": 1791639875.6082213,
+    "seen": 1791639899.0206468,
+    "ast_hash": "b26ec0c0df152dc5c7145b0d6afc71f5",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/terrain.rs": {
+    "mtime": 1791646534.6229799,
+    "seen": 1791646920.6941066,
+    "ast_hash": "4f0cd0471544233a357a4c821fc6a715",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/world.rs": {
+    "mtime": 1791662336.863174,
+    "seen": 1791662538.8134015,
+    "ast_hash": "ded7d7780b282aabab3ee2a453bbaec8",
+    "semantic_hash": ""
+  },
+  "crates/swarm-wasm/Cargo.toml": {
+    "mtime": 1791638260.4733305,
+    "seen": 1791638489.0119116,
+    "ast_hash": "4031b79eac46e98084d749dbe36ef036",
+    "semantic_hash": ""
+  },
+  "crates/swarm-wasm/src/lib.rs": {
+    "mtime": 1791660658.061186,
+    "seen": 1791662169.711487,
+    "ast_hash": "068fca2483cdc8b7b74538c6f6932560",
+    "semantic_hash": ""
+  },
+  "web/package.json": {
+    "mtime": 1791661927.13631,
+    "seen": 1791662169.711488,
+    "ast_hash": "a15ccf8d7586edd2288ee7171041b281",
+    "semantic_hash": ""
+  },
+  "web/src/main.ts": {
+    "mtime": 1791661845.992591,
+    "seen": 1791662169.7115624,
+    "ast_hash": "0fe60c5eaa3b5cca87f3f8ed1f3adea2",
+    "semantic_hash": ""
+  },
+  "web/src/protocol.ts": {
+    "mtime": 1791661868.8801486,
+    "seen": 1791662169.711637,
+    "ast_hash": "b3bfd27a094f0eb5d4ba87a86811e4e1",
+    "semantic_hash": ""
+  },
+  "web/src/render/swarm.ts": {
+    "mtime": 1791657631.8300514,
+    "seen": 1791657953.615118,
+    "ast_hash": "3a7a01616f31464aad68d331fc315477",
+    "semantic_hash": ""
+  },
+  "web/src/render/terrain.ts": {
+    "mtime": 1791646767.7867885,
+    "seen": 1791646920.7040446,
+    "ast_hash": "8c8d1831905137cbbc30d96e3d4d0e24",
+    "semantic_hash": ""
+  },
+  "web/src/sim.worker.ts": {
+    "mtime": 1791661887.0985188,
+    "seen": 1791662169.7120335,
+    "ast_hash": "723915e1e27abcfc223f8d770919c436",
+    "semantic_hash": ""
+  },
+  "web/src/snapshot.ts": {
+    "mtime": 1791639638.6379952,
+    "seen": 1791639899.0207691,
+    "ast_hash": "fcd27172aef643726e51d7e1b1103042",
+    "semantic_hash": ""
+  },
+  "web/tsconfig.json": {
+    "mtime": 1791638424.6575558,
+    "seen": 1791638489.0119207,
+    "ast_hash": "875bd35d5a2d3c4675d8b7c5c5ed6555",
+    "semantic_hash": ""
+  },
+  "web/vite.config.ts": {
+    "mtime": 1791638424.986562,
+    "seen": 1791638489.0119216,
+    "ast_hash": "0ee5db1026740336547eee40ba486b1d",
+    "semantic_hash": ""
+  },
+  ".claude/PRPs/prds/swarm-mind.prd.md": {
+    "mtime": 1791645159.3157475,
+    "seen": 1791646092.3065455,
+    "ast_hash": "78d30ba2dc9e9e0176831ec980b45e2d",
+    "semantic_hash": ""
+  },
+  "web/index.html": {
+    "mtime": 1791661927.1417775,
+    "seen": 1791662169.7123082,
+    "ast_hash": "d69b0173b4c5726161827de3bc9c625f",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/fire.rs": {
+    "mtime": 1791646356.2382836,
+    "seen": 1791646920.6939352,
+    "ast_hash": "5b9d49e490595f26814b6969f7957914",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/metrics.rs": {
+    "mtime": 1791639286.5688362,
+    "seen": 1791639899.0206044,
+    "ast_hash": "9cf3d9cb1f1f64cff5eef7514c331219",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/tests/harness/mod.rs": {
+    "mtime": 1791646179.9605415,
+    "seen": 1791646920.6941106,
+    "ast_hash": "84692b50ddb9ae276235047bcb58ec1d",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/tests/scenarios.rs": {
+    "mtime": 1791646303.3053205,
+    "seen": 1791646920.694112,
+    "ast_hash": "6cfc1ae756d91ec8f7ff5d6f2ccb9f88",
+    "semantic_hash": ""
+  },
+  "web/src/monitor.ts": {
+    "mtime": 1791646342.2300744,
+    "seen": 1791646920.7038283,
+    "ast_hash": "0b3bca5e751c2ac84d7b87b80495eb48",
+    "semantic_hash": ""
+  },
+  "web/src/render/fire.ts": {
+    "mtime": 1791640043.9472475,
+    "seen": 1791640202.0727217,
+    "ast_hash": "1189748cd34d339a023297fd75f1817c",
+    "semantic_hash": ""
+  },
+  "web/src/render/pulses.ts": {
+    "mtime": 1791647814.5746129,
+    "seen": 1791647828.5652857,
+    "ast_hash": "572f33e7d92315f64a15ea6f7c2caa1c",
+    "semantic_hash": ""
+  },
+  "web/src/render/marker.ts": {
+    "mtime": 1791639946.2187254,
+    "seen": 1791640202.0727232,
+    "ast_hash": "da90775905f0b2e4e422fc47533dee28",
+    "semantic_hash": ""
+  },
+  "crates/swarm-brain/src/mission.rs": {
+    "mtime": 1791650878.6981318,
+    "seen": 1791651040.6390262,
+    "ast_hash": "c5c7dfc5da71ec86ba13c5ee695eb11b",
+    "semantic_hash": ""
+  },
+  "crates/swarm-brain/src/plan.rs": {
+    "mtime": 1791642036.239012,
+    "seen": 1791643419.4891,
+    "ast_hash": "166f2f450fa01e5e9a9a1327e143b76f",
+    "semantic_hash": ""
+  },
+  "crates/swarm-brain/src/routing.rs": {
+    "mtime": 1791659943.0722997,
+    "seen": 1791660545.1741264,
+    "ast_hash": "34ec0e09a945b6bd5db6270f39e67f26",
+    "semantic_hash": ""
+  },
+  "crates/swarm-brain/src/tests.rs": {
+    "mtime": 1791660312.3242464,
+    "seen": 1791660545.1741297,
+    "ast_hash": "0b3136b74d2d8139cbdd24c677bb50f3",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/chatter.rs": {
+    "mtime": 1791656919.6459794,
+    "seen": 1791657236.6390033,
+    "ast_hash": "592a953d2d370223f6089380fbe4da8d",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/preset.rs": {
+    "mtime": 1791646546.132935,
+    "seen": 1791646920.693985,
+    "ast_hash": "b3dc0cc359c50b6c4fa6ecf693f8fae4",
+    "semantic_hash": ""
+  },
+  "web/src/callsigns.ts": {
+    "mtime": 1791657515.6654584,
+    "seen": 1791657953.6147258,
+    "ast_hash": "e9cb19eabbbcb5ea536f80f2ceea674d",
+    "semantic_hash": ""
+  },
+  "web/src/chatter.ts": {
+    "mtime": 1791657172.328592,
+    "seen": 1791657236.6395571,
+    "ast_hash": "570235b1acec5173fb820c0e5895f9ee",
+    "semantic_hash": ""
+  },
+  "web/src/presets.ts": {
+    "mtime": 1791646954.1788049,
+    "seen": 1791647048.5447443,
+    "ast_hash": "f6fe88690455a04ff7712c44c21c2cd1",
+    "semantic_hash": ""
+  },
+  "web/src/render/fx.ts": {
+    "mtime": 1791647450.053403,
+    "seen": 1791647571.4440258,
+    "ast_hash": "7c55d014990a8a6d40d8bfd760cc2729",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/preset_tests.rs": {
+    "mtime": 1791646692.7802246,
+    "seen": 1791646920.693987,
+    "ast_hash": "b223e7113abae671f5a08c1ede4e1591",
+    "semantic_hash": ""
+  },
+  "web/src/render/base-station.ts": {
+    "mtime": 1791646451.9611468,
+    "seen": 1791646920.7038367,
+    "ast_hash": "265fa0b361c6d16e90e1c13937ac46f6",
+    "semantic_hash": ""
+  },
+  "web/src/render/drone-model.ts": {
+    "mtime": 1791646967.1883156,
+    "seen": 1791647048.544821,
+    "ast_hash": "5f56729d32eb3f40f6239409eb4ebe49",
+    "semantic_hash": ""
+  },
+  "web/src/render/wrecks.ts": {
+    "mtime": 1791646409.7313578,
+    "seen": 1791646920.7040465,
+    "ast_hash": "629cb32a1e4a6e8e0c1f55b08717d0ec",
+    "semantic_hash": ""
+  },
+  "web/src/ui/camera.ts": {
+    "mtime": 1791646374.0196824,
+    "seen": 1791646920.704113,
+    "ast_hash": "ab0435db56bdeb6f08f40a30952fcd49",
+    "semantic_hash": ""
+  },
+  "web/src/ui/console.ts": {
+    "mtime": 1791661878.4189126,
+    "seen": 1791662169.7121153,
+    "ast_hash": "198c59b7e649d7e7da02dbda0c094554",
+    "semantic_hash": ""
+  },
+  "web/src/ui/demos.ts": {
+    "mtime": 1791661829.9406176,
+    "seen": 1791662169.7121165,
+    "ast_hash": "8226f8c0cc33ab0f9d675d256dd9f55d",
+    "semantic_hash": ""
+  },
+  "web/src/ui/picker.ts": {
+    "mtime": 1791646851.383224,
+    "seen": 1791646920.70412,
+    "ast_hash": "857c844d1358505088956515f77ba219",
+    "semantic_hash": ""
+  },
+  "web/src/ui/selection.ts": {
+    "mtime": 1791646394.158744,
+    "seen": 1791646920.7041225,
+    "ast_hash": "424626d5f6b924fdad15e7301ec7be5e",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/channel.rs": {
+    "mtime": 1791661845.2827194,
+    "seen": 1791662169.7109566,
+    "ast_hash": "e824b6e409eec674ff1392f309d9a817",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/painless.rs": {
+    "mtime": 1791662721.8262868,
+    "seen": 1791662766.9717655,
+    "ast_hash": "1cbbba7eaf581dd73e6ae09ea25c65c7",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/src/telemetry.rs": {
+    "mtime": 1791662336.862726,
+    "seen": 1791662538.810245,
+    "ast_hash": "4117ac3daaeb891208b25557ff7a74ef",
+    "semantic_hash": ""
+  },
+  "web/src/telemetry.ts": {
+    "mtime": 1791661903.442569,
+    "seen": 1791662169.7120721,
+    "ast_hash": "b0219820cb61e5a2d68cf07edbe52af5",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1791662117.1456814,
+    "seen": 1791662169.712307,
+    "ast_hash": "30d505a3a991835549118a32475ccbe0",
+    "semantic_hash": ""
+  },
+  "crates/swarm-sim/tests/telemetry.rs": {
+    "mtime": 1791657913.4011874,
+    "seen": 1791657953.61461,
+    "ast_hash": "7535250ea645409eee85eb65a2600ca4",
+    "semantic_hash": ""
+  },
+  "web/src/render/airtime.ts": {
+    "mtime": 1791657884.1625373,
+    "seen": 1791657953.6148746,
+    "ast_hash": "75f0d4dc6655937cc6d179d7975a687f",
+    "semantic_hash": ""
+  },
+  "web/src/ui/linkbudget.ts": {
+    "mtime": 1791661903.4414105,
+    "seen": 1791662169.712118,
+    "ast_hash": "a8e40e63a46066126b4c2497b9206c81",
+    "semantic_hash": ""
+  },
+  "crates/swarm-brain/src/airtime.rs": {
+    "mtime": 1791662222.7744102,
+    "seen": 1791662538.807789,
+    "ast_hash": "ade48969b22dfcd5e6255edefcb37d30",
+    "semantic_hash": ""
+  },
+  "web/tests/telemetry.test.ts": {
+    "mtime": 1791661918.8930464,
+    "seen": 1791662169.7121987,
+    "ast_hash": "63c1df2701d29c14cf4e3a675d2123f8",
+    "semantic_hash": ""
+  }
+}

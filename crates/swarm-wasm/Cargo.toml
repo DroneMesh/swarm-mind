@@ -1,0 +1,13 @@
+[package]
+name = "swarm-wasm"
+description = "C-ABI bridge that lets the browser drive the swarm simulator."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+swarm-brain = { path = "../swarm-brain" }
+swarm-sim = { path = "../swarm-sim" }
