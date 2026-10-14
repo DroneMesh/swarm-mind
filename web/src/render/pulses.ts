@@ -33,7 +33,7 @@ const STYLES: Record<number, Style> = {
     dotAlpha: 0.55,
   },
   [PulseKind.Intent]: {
-    color: new THREE.Color(0xffc93c),
+    color: new THREE.Color(0xffb81f),
     ring: 60,
     ringLife: 0.9,
     ringAlpha: 0.6,

@@ -58,7 +58,7 @@ const LINK_FLICKER = 7;
 
 /** Drone colours; the legend in index.html mirrors these. */
 export const DRONE_COLORS = {
-  sink: new THREE.Color(0xffc93c),
+  sink: new THREE.Color(0xffb81f),
   reserve: new THREE.Color(0x4fc3f7),
   scout: new THREE.Color(0x7cff6b),
   relay: new THREE.Color(0xc77dff),

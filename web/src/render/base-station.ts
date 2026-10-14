@@ -41,7 +41,7 @@ export class BaseStation {
 
     const markings = new THREE.Mesh(
       mergeAll([
-        tint(new THREE.RingGeometry(PAD_RADIUS - 1.4, PAD_RADIUS - 0.8, 48).rotateX(-Math.PI / 2), 0xffc93c),
+        tint(new THREE.RingGeometry(PAD_RADIUS - 1.4, PAD_RADIUS - 0.8, 48).rotateX(-Math.PI / 2), 0xffb81f),
         tint(new THREE.BoxGeometry(1.1, 0.06, 7).translate(-2.2, 0, 0), 0xf2f4f7),
         tint(new THREE.BoxGeometry(1.1, 0.06, 7).translate(2.2, 0, 0), 0xf2f4f7),
         tint(new THREE.BoxGeometry(3.3, 0.06, 1.1), 0xf2f4f7),

@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "web/src/render/swarm.ts": {
-    "mtime": 1791723017.5929759,
-    "seen": 1791723278.7334046,
-    "ast_hash": "cd3f6264887d11d910d5d0dec4e850de",
+    "mtime": 1792002137.399121,
+    "seen": 1792002234.7495852,
+    "ast_hash": "8ce61816b4784c9a6d89230acdf25912",
     "semantic_hash": ""
   },
   "web/src/render/terrain.ts": {
@@ -150,9 +150,9 @@
     "semantic_hash": ""
   },
   "web/index.html": {
-    "mtime": 1791723212.0698383,
-    "seen": 1791723278.7337992,
-    "ast_hash": "14d21ac2241687758986fbdd9f1e222e",
+    "mtime": 1792002173.2247958,
+    "seen": 1792002234.750444,
+    "ast_hash": "7fe736737a65ddd47701dba1f054c02b",
     "semantic_hash": ""
   },
   "crates/swarm-sim/src/fire.rs": {
@@ -192,9 +192,9 @@
     "semantic_hash": ""
   },
   "web/src/render/pulses.ts": {
-    "mtime": 1791723038.4743319,
-    "seen": 1791723278.7334032,
-    "ast_hash": "57a009f0d4685fff3973352140f26d38",
+    "mtime": 1792002137.3986921,
+    "seen": 1792002234.7495837,
+    "ast_hash": "dda84bfa6cb88cc168a153b3a21cf0f2",
     "semantic_hash": ""
   },
   "web/src/render/marker.ts": {
@@ -270,9 +270,9 @@
     "semantic_hash": ""
   },
   "web/src/render/base-station.ts": {
-    "mtime": 1791646451.9611468,
-    "seen": 1791646920.7038367,
-    "ast_hash": "265fa0b361c6d16e90e1c13937ac46f6",
+    "mtime": 1792002137.3955371,
+    "seen": 1792002234.7493823,
+    "ast_hash": "6e5c8383e2bb5dc9ee5a30da05d623fa",
     "semantic_hash": ""
   },
   "web/src/render/drone-model.ts": {
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "web/tests/layout.test.ts": {
-    "mtime": 1791723246.3247113,
-    "seen": 1791723278.7336478,
-    "ast_hash": "67797ba2a80c4cb44afee920973edd73",
+    "mtime": 1791726621.7832325,
+    "seen": 1792002234.7501976,
+    "ast_hash": "7c0cbeb6bcd4929b03b6fb4c5e279fae",
     "semantic_hash": ""
   },
   "web/tests/link-style.test.ts": {
@@ -447,6 +447,18 @@
     "mtime": 1791726599.1057496,
     "seen": 1791726602.6302588,
     "ast_hash": "7eb4951380379a7db80287f7b43d3eb1",
+    "semantic_hash": ""
+  },
+  "web/public/brand/dm-mark.png": {
+    "mtime": 1792002119.8953857,
+    "seen": 1792002234.7504456,
+    "ast_hash": "056a5f19bb3580ccc6c68c02378d5bc6",
+    "semantic_hash": ""
+  },
+  "web/public/brand/favicon.png": {
+    "mtime": 1792002119.8983858,
+    "seen": 1792002234.7504468,
+    "ast_hash": "d7a9a22dd2ebf0c048f59a8bc6e793ed",
     "semantic_hash": ""
   }
 }

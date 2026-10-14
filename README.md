@@ -27,7 +27,7 @@ cd web
 npm run dev        # builds the Rust brain + sim to WASM, then starts Vite
 ```
 
-Open the URL Vite prints (usually http://localhost:5173). After a couple of seconds the swarm launches automatically with **Monitor fire**.
+Open the URL Vite prints (usually http://localhost:5173). The dev and preview servers listen on `0.0.0.0`, so other devices on your local network can use the **Network** URL Vite prints too (allow port 5173 through your firewall if needed). After a couple of seconds the swarm launches automatically with **Monitor fire**.
 
 ## All commands
 

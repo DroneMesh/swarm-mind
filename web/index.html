@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swarm Mind</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Ccircle cx=%278%27 cy=%278%27 r=%275%27 fill=%27%235fd8ea%27/%3E%3C/svg%3E" />
+    <title>Swarm Mind · DM Defense</title>
+    <link rel="icon" type="image/png" href="./brand/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Saira:wght@400;500;600&display=swap" rel="stylesheet" />
     <style>
       :root {
-        --panel: rgb(12 16 24 / 0.72);
-        --edge: rgb(255 255 255 / 0.08);
-        --text: #dfe7f2;
-        --dim: #8b97a8;
-        --gold: #ffc93c;
+        --panel: rgb(11 17 24 / 0.86);
+        --edge: rgb(154 168 186 / 0.16);
+        --text: #f4f7fb;
+        --dim: #9aa8ba;
+        --gold: #ffb81f;
         --good: #7cff6b;
         --warn: #ff9f43;
-        --bad: #ff6b6b;
+        --bad: #ff5c4d;
         /* Set by the radio console to its on-screen height. */
         --console-h: 28vh;
         --gap: 16px;
@@ -27,13 +30,19 @@
         --term-red: #ff5c5c;
         --term-edge: rgb(109 255 155 / 0.18);
         --mono: ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, Consolas, monospace;
+        /* DM Defense brand (carried over from swarm_control design-src). */
+        --display: 'Chakra Petch', system-ui, sans-serif;
+        --ui: Saira, system-ui, sans-serif;
+        --night: #070a10;
+        --steel: #4a72a3;
+        --brand-h: 44px;
       }
       html,
       body {
         margin: 0;
         height: 100%;
         overflow: hidden;
-        background: #1d2433;
+        background: #070a10;
         color: var(--text);
         font: 13px/1.5 var(--mono);
       }
@@ -49,18 +58,68 @@
         padding: 10px 14px;
         background: var(--panel);
         border: 1px solid var(--edge);
-        border-radius: 8px;
+        border-radius: 2px;
         pointer-events: none;
         backdrop-filter: blur(4px);
       }
       .title {
         color: var(--dim);
-        letter-spacing: 0.08em;
+        font-family: var(--display);
+        font-weight: 600;
+        letter-spacing: 0.16em;
         font-size: 11px;
         margin-bottom: 4px;
       }
-      #hud {
+      /* Amber tick before every panel title, as in the DM Defense consoles. */
+      .panel > .title::before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-right: 7px;
+        background: var(--gold);
+        vertical-align: 1px;
+      }
+
+      /* --- Brand lockup --------------------------------------------------------- */
+      #brand {
+        position: fixed;
         top: var(--gap);
+        left: var(--gap);
+        height: var(--brand-h);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 14px 0 10px;
+        background: var(--panel);
+        border: 1px solid var(--edge);
+        border-left: 2px solid var(--gold);
+        border-radius: 2px;
+        backdrop-filter: blur(4px);
+        text-decoration: none;
+        z-index: 2;
+      }
+      #brand img {
+        height: 22px;
+        width: auto;
+      }
+      #brand .words {
+        display: grid;
+        line-height: 1;
+        gap: 4px;
+      }
+      #brand .co {
+        font: 700 15px/1 var(--display);
+        letter-spacing: 0.06em;
+        color: var(--text);
+      }
+      #brand .prod {
+        font: 600 9.5px/1 var(--display);
+        letter-spacing: 0.42em;
+        color: var(--steel);
+      }
+      #hud {
+        top: calc(var(--gap) + var(--brand-h) + 8px);
         left: var(--gap);
         white-space: pre;
         font-size: 12.5px;
@@ -107,7 +166,7 @@
         padding: 4px;
         background: var(--panel);
         border: 1px solid var(--edge);
-        border-radius: 8px;
+        border-radius: 2px;
         backdrop-filter: blur(4px);
       }
       .chipbar .k {
@@ -122,7 +181,7 @@
         color: var(--text);
         background: rgb(255 255 255 / 0.05);
         border: 1px solid rgb(255 255 255 / 0.1);
-        border-radius: 6px;
+        border-radius: 2px;
         padding: 4px 8px;
         cursor: pointer;
         white-space: nowrap;
@@ -134,7 +193,7 @@
       .chipbar button.active {
         border-color: var(--gold);
         color: var(--gold);
-        box-shadow: 0 0 12px rgb(255 201 60 / 0.25);
+        box-shadow: 0 0 12px rgb(255 184 31 / 0.25);
       }
       #demos button.active::before {
         content: '■ ';
@@ -177,7 +236,7 @@
         padding: 8px;
         background: rgb(10 14 20 / 0.94);
         border: 1px solid var(--edge);
-        border-radius: 10px;
+        border-radius: 2px;
         box-shadow: 0 18px 40px rgb(0 0 0 / 0.5);
       }
       .picker .menu[hidden] {
@@ -190,7 +249,7 @@
         color: var(--text);
         background: rgb(255 255 255 / 0.03);
         border: 1px solid rgb(255 255 255 / 0.07);
-        border-radius: 8px;
+        border-radius: 2px;
         padding: 9px 10px;
         cursor: pointer;
       }
@@ -200,13 +259,13 @@
         outline: none;
       }
       .picker .card[aria-selected='true'] {
-        border-color: rgb(255 201 60 / 0.6);
+        border-color: rgb(255 184 31 / 0.6);
       }
       .picker .swatch {
         flex: none;
         width: 44px;
         height: 44px;
-        border-radius: 6px;
+        border-radius: 2px;
         border: 1px solid rgb(255 255 255 / 0.12);
       }
       .picker .txt {
@@ -245,7 +304,7 @@
         color: var(--text);
         background: rgb(255 255 255 / 0.06);
         border: 1px solid rgb(255 255 255 / 0.12);
-        border-radius: 6px;
+        border-radius: 2px;
         padding: 5px 6px;
         cursor: pointer;
       }
@@ -467,7 +526,7 @@
         height: 7px;
         margin: 3px 0 13px;
         background: rgb(255 255 255 / 0.07);
-        border-radius: 3px;
+        border-radius: 2px;
       }
       #linkbudget .lb-pps .fill {
         position: absolute;
@@ -475,7 +534,7 @@
         top: 0;
         bottom: 0;
         width: 0;
-        border-radius: 3px;
+        border-radius: 2px;
         background: var(--good);
         transition: width 0.35s ease;
       }
@@ -552,7 +611,7 @@
         color: var(--dim);
         background: rgb(255 255 255 / 0.04);
         border: 1px solid rgb(255 255 255 / 0.1);
-        border-radius: 4px;
+        border-radius: 2px;
         padding: 1px 5px;
         cursor: pointer;
       }
@@ -562,7 +621,7 @@
       }
       #linkbudget .lb-btn[aria-pressed='true'] {
         color: var(--gold);
-        border-color: rgb(255 201 60 / 0.6);
+        border-color: rgb(255 184 31 / 0.6);
       }
       #linkbudget.tlm-off .lb-table {
         opacity: 0.55;
@@ -641,12 +700,12 @@
           transform 0.35s ease;
         padding: 12px 16px 10px;
         background: linear-gradient(180deg, rgb(10 14 22 / 0.86), rgb(10 14 22 / 0.94));
-        border: 1px solid rgb(255 201 60 / 0.22);
+        border: 1px solid rgb(255 184 31 / 0.22);
         border-left: 3px solid var(--gold);
-        border-radius: 8px;
+        border-radius: 2px;
         box-shadow: 0 14px 40px rgb(0 0 0 / 0.45);
         z-index: 5;
-        font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+        font-family: var(--ui);
       }
       .caption.show {
         opacity: 1;
@@ -669,7 +728,7 @@
         color: var(--dim);
         background: none;
         border: 1px solid rgb(255 255 255 / 0.14);
-        border-radius: 5px;
+        border-radius: 2px;
         padding: 4px 7px;
         cursor: pointer;
         white-space: pre;
@@ -829,7 +888,7 @@
         cursor: pointer;
         color: var(--term-dim);
         border: 1px solid var(--term-edge);
-        border-radius: 4px;
+        border-radius: 2px;
         padding: 0 6px;
       }
       .radio .chip.live {
@@ -1020,7 +1079,7 @@
         color: #021;
         background: var(--term-green);
         border: none;
-        border-radius: 4px;
+        border-radius: 2px;
         padding: 2px 8px;
         cursor: pointer;
         font-size: 11px;
@@ -1057,7 +1116,7 @@
         color: var(--term-dim);
         background: transparent;
         border: 1px solid rgb(109 255 155 / 0.16);
-        border-radius: 3px;
+        border-radius: 2px;
         padding: 1px 7px;
         cursor: pointer;
         letter-spacing: 0.04em;
@@ -1097,7 +1156,7 @@
         color: var(--term-green);
         background: rgb(0 0 0 / 0.45);
         border: 1px solid rgb(109 255 155 / 0.25);
-        border-radius: 3px;
+        border-radius: 2px;
         padding: 2px 6px;
         outline: none;
         text-transform: uppercase;
@@ -1113,6 +1172,50 @@
       .radio input[type='search'].bad {
         border-color: var(--term-red);
         color: var(--term-red);
+      }
+
+      /* --- Brand type: Chakra Petch for controls and headings ------------------- */
+      .chipbar button,
+      .picker .pick,
+      #operator button,
+      .caption .ctitle,
+      #linkbudget .lb-title {
+        font-family: var(--display);
+        letter-spacing: 0.06em;
+      }
+      .chipbar button,
+      #operator button {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 11.5px;
+      }
+      .chipbar .k,
+      .picker .pick .k,
+      #linkbudget .lb-row .k {
+        font-family: var(--display);
+        font-weight: 600;
+        letter-spacing: 0.2em;
+      }
+      #linkbudget .lb-title {
+        font-weight: 600;
+        letter-spacing: 0.16em;
+      }
+      .caption .ctitle {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .chipbar button.active,
+      #operator button.active {
+        background: rgb(255 184 31 / 0.1);
+      }
+      #operator button.danger {
+        color: var(--bad);
+      }
+      @media (max-width: 720px) {
+        #brand .words {
+          display: none;
+        }
       }
 
       @media (max-width: 1240px) {
@@ -1179,6 +1282,10 @@
     </style>
   </head>
   <body>
+    <div id="brand" title="DM Defense · Swarm Mind">
+      <img src="./brand/dm-mark.png" alt="DM" />
+      <span class="words"><span class="co">DM DEFENSE</span><span class="prod">SWARM MIND</span></span>
+    </div>
     <div id="hud" class="panel">Starting swarm…</div>
 
     <div id="director" class="panel">
@@ -1211,7 +1318,7 @@
 
     <div id="legend" class="panel">
       <div class="title">LEGEND</div>
-      <span><i style="background: #ffc93c"></i>Base station</span>
+      <span><i style="background: #ffb81f"></i>Base station</span>
       <span title="The brain's route to its parent (lighter tints when it weakens)"><i class="line" style="background: #7fe7ff"></i>Route to base</span>
       <span><i style="background: #7cff6b"></i>Scout</span>
       <span title="Opacity follows the measured delivery ratio of brain frames (~4 s)"><i class="line" style="background: linear-gradient(90deg, #2c5f80, rgb(44 95 128 / 0.25))"></i>Neighbor link (fades with loss)</span>
@@ -1222,7 +1329,7 @@
       <span><i style="background: #ff9f43"></i>No route</span>
       <span><i class="dot" style="background: #5fd8ea"></i>Heartbeat</span>
       <span><i style="background: #a9b0b8"></i>Down</span>
-      <span><i class="dot" style="background: #ffc93c"></i>Intent</span>
+      <span><i class="dot" style="background: #ffb81f"></i>Intent</span>
       <span aria-hidden="true"></span>
       <span><i class="dot" style="background: #ff6a1a"></i>Burning</span>
       <span><i class="line dash"></i>Mesh tree (telemetry)</span>
